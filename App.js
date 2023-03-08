@@ -1,20 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import Main from "./componente/main";
+import { ImageBackground ,StyleSheet } from "react-native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ImageBackground style={style.ImageBackground} source={{uri:"https://areajugones.sport.es/wp-content/uploads/2021/08/anime-1080x609.jpg"}}>
+    <Main></Main>    
+    </ImageBackground> // Colo el fonod de lapantall principal 
+
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const style = StyleSheet.create({
+  ImageBackground:{
+    flex:1
+  }
+})
+
+
